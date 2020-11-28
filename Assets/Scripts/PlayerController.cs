@@ -30,7 +30,7 @@ public class PlayerController : Bytes.Controllers.FPSController
         _PickItem_Update();
     }
     
-    public void AddGluten(int amount)
+    public void AddGluten(float amount)
     {
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
         if (gluten >= 100) { Die(); }
@@ -46,7 +46,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     private void HandleGlutenUpdate(Data data)
     {
         IntDataBytes casted = (IntDataBytes) data;
-        gluten += AddGluten((float)casted.IntValue);
+        AddGluten((float)casted.IntValue);
     }
 
     protected virtual void _PickItem_Update()
