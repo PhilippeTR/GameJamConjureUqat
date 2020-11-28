@@ -66,7 +66,7 @@ namespace Bytes.Controllers
         /// <summary>
         /// Fonction qui s'occupe du mouvement du joueur en entier, appelée dans Update à chaque frame
         /// </summary>
-        protected virtual void _Movement_Update()
+        protected virtual float _Movement_Update()
         {
             float horiz = Input.GetAxisRaw("Horizontal");
             float vert = Input.GetAxisRaw("Vertical");
@@ -82,6 +82,10 @@ namespace Bytes.Controllers
 
             // GetComponent<Rigidbody>().velocity = (mouvementAvant + mouvementDeCoter);//Le dernier vecteur ajoute de la force vers le sol et empêche ainsi le joueur de flotter
             GetComponent<Rigidbody>().velocity = (mouvementAvant + mouvementDeCoter + new Vector3(0, -3, 0));
+
+            if (horiz == 0 && vert == 0) { return 0; }
+
+            return vitesse;
         }
 
         /// <summary>
