@@ -15,10 +15,13 @@ public class PlayerController : Bytes.Controllers.FPSController
 
     public float forceTowardPickedObj = 12f;
 
+    public GlutenBar glutenBar;
+
     public void Start()
     {
         pickedItem = null;
         EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
+        glutenBar.setMaxHealth(gluten);
     }
 
     protected override void Update()
@@ -33,6 +36,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     public void AddGluten(float amount)
     {
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
+        glutenBar.setHealth(gluten + amount);
         if (gluten >= 100) { Die(); }
     }
 
@@ -47,6 +51,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     {
         IntDataBytes casted = (IntDataBytes) data;
         AddGluten((float)casted.IntValue);
+        
     }
 
     protected virtual void _PickItem_Update()

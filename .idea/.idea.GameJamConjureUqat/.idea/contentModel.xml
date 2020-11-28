@@ -26,6 +26,10 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BaseAIController.cs" t="Include" />
+          <e p="BaseScript" t="Include">
+            <e p="Action.cs" t="Include" />
+            <e p="Trigger.cs" t="Include" />
+          </e>
           <e p="bytes-unity-utils" t="Include">
             <e p="Animation" t="Include">
               <e p="AnimateManager.cs" t="Include" />
@@ -66,10 +70,24 @@
           <e p="Damage.cs" t="Include" />
           <e p="EventNames.cs" t="Include" />
           <e p="Fall.cs" t="Include" />
+          <e p="FollowHeadToast" t="Include">
+            <e p="FollowingRotation.cs" t="Include" />
+          </e>
           <e p="GameManager.cs" t="Include" />
+          <e p="GlutenBar.cs" t="Include" />
+          <e p="JumpingToast" t="Include">
+            <e p="JumpingForce.cs" t="Include" />
+            <e p="ResetAnimation.cs" t="Include" />
+            <e p="TriggerJump.cs" t="Include" />
+          </e>
           <e p="LightFlickering.cs" t="Include" />
           <e p="Observer.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="Posession" t="Include">
+            <e p="Materials" t="Include">
+              <e p="Rotate.cs" t="Include" />
+            </e>
+          </e>
           <e p="ToastFly.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
