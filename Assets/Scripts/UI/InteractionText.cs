@@ -19,7 +19,7 @@ public class InteractionText : MonoBehaviour
 
         EventManager.AddEventListener(EventNames.interactionTextUpdate, HandleInteractionTextUpdate);
 
-        Animate.Delay(3f, ()=> { EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("E - interact")); });
+        //Animate.Delay(3f, ()=> { EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("E - interact")); });
     }
 
     private void HandleInteractionTextUpdate(Bytes.Data data)
