@@ -64,6 +64,7 @@
           </e>
           <e p="Damage.cs" t="Include" />
           <e p="EventNames.cs" t="Include" />
+          <e p="Fall.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="LightFlickering.cs" t="Include" />
           <e p="Observer.cs" t="Include" />
