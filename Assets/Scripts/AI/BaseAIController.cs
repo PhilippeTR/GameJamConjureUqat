@@ -15,7 +15,7 @@ public class BaseAIController : MonoBehaviour
         this.target = target;
     }
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
