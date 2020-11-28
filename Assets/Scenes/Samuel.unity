@@ -3156,11 +3156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: xSpeed
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: zSpeed
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: zAmplitude
@@ -3168,7 +3168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: ySpeed
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: xAmplitude
@@ -3177,6 +3177,10 @@ PrefabInstance:
     - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: yAmplitude
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195330278626484373, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8903749472988055292, guid: 10e0ffa819ac4d0419667c81e705a994, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3340,6 +3344,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 48
       objectReference: {fileID: 0}
+    - target: {fileID: 8721285543238163957, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
+      propertyPath: m_Name
+      value: Toast
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721285543515831273, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
+      propertyPath: m_Name
+      value: Rope
+      objectReference: {fileID: 0}
     - target: {fileID: 8721285543515831275, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
       propertyPath: m_HighTwistLimit.limit
       value: 50
@@ -3347,6 +3359,10 @@ PrefabInstance:
     - target: {fileID: 8721285543515831276, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
       propertyPath: m_Constraints
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721285543932635708, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
+      propertyPath: m_Name
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db49c0f07cd118d46a01138a55d7d347, type: 3}
