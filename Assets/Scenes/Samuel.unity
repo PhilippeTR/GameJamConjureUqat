@@ -513,7 +513,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 100
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -913,7 +913,7 @@ MonoBehaviour:
   mouseSensitivy: 1.5
   canBeControlled: 1
   overrideMouse: 1
-  gluten: 100
+  gluten: 0
   alive: 1
   pickedItem: {fileID: 0}
   pickedItemTarget: {fileID: 567982132}
