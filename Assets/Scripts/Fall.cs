@@ -12,7 +12,7 @@ public class Fall : MonoBehaviour
 
     private void Start()
     {
-        toastEnemy.GetComponent<Rigidbody>().useGravity = false;
+        //toastEnemy.GetComponent<Rigidbody>().useGravity = false;
         toastEnemy.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         toastEnemy.SetActive(false);
         
