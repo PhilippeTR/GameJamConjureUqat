@@ -25,6 +25,7 @@
           <e p="dontdeleteme.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="BaseAIController.cs" t="Include" />
           <e p="bytes-unity-utils" t="Include">
             <e p="Animation" t="Include">
               <e p="AnimateManager.cs" t="Include" />
@@ -69,6 +70,7 @@
           <e p="LightFlickering.cs" t="Include" />
           <e p="Observer.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="ToastFly.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
           <e p="dontdeleteme.txt" t="Include" />

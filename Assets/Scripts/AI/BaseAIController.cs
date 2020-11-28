@@ -10,12 +10,14 @@ public class BaseAIController : MonoBehaviour
     public Transform target;
     public Vector3 overrideTarget;
 
+    public float distanceStopFollowing = 8f;
+
     public void SetTarget(Transform target)
     {
         this.target = target;
     }
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
@@ -24,8 +26,18 @@ public class BaseAIController : MonoBehaviour
     {
         if (target != null)
         {
+            float dis = GetDistanceFromTarget();
+
             agent.SetDestination(target.position);
+
+            // Stop following player if far enough
+            if (dis >= distanceStopFollowing) { target = null; }
         }
+    }
+
+    protected virtual float GetDistanceFromTarget()
+    {
+        return Vector3.Distance(this.transform.position, target.position);
     }
 
 }
