@@ -5,15 +5,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance;
-
     private PlayerController player;
+
     private void Awake()
     {
         instance = this;
+        player = GameObject.FindObjectOfType<PlayerController>();
     }
+
     void Start()
     {
-        player = GameManager.FindObjectOfType<PlayerController>();
+        
     }
 
     public PlayerController GetPlayerRef()
