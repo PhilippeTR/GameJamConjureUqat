@@ -8,7 +8,7 @@ public class GlutenBar : MonoBehaviour
 
     public Slider slider;
 
-    public void setMaxHealth(float health)
+    public void setMinHealth(float health)
     {
         slider.maxValue = health;
         slider.value = health;

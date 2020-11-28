@@ -21,7 +21,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     {
         pickedItem = null;
         EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
-        glutenBar.setMaxHealth(gluten);
+        glutenBar.setMinHealth(0f);
     }
 
     protected override void Update()
