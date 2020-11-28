@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowingRotation : Action
+public class FollowingRotation : MonoBehaviour
 {
     public GameObject followed;
     public Vector3 position;
@@ -26,21 +26,20 @@ public class FollowingRotation : Action
             float deltaY = followed.transform.position.y - position.y;
             float hypo = Mathf.Sqrt(deltaX * deltaX + deltaY * deltaY);
             speedX = (deltaX/ hypo <= transform.rotation.x)? 1: -1;
-            speedY = (deltaY / hypo <= transform.rotation.x) ? 1 : -1;
             Debug.Log("X:"+ speedX + "Y:"+ speedY);
-            Vector3 v = new Vector3(speedY, speedX, 0);
+            Vector3 v = new Vector3(0, speedX, 0);
             transform.Rotate(v, speed * Time.deltaTime);
         }
     }
-    public void executeEnter(GameObject g)
+    public void ExecuteEnter()
     {
         active = true;
     }
-    public void executeStay(GameObject g)
+    public void ExecuteStay()
     {
 
     }
-    public void executeLeave(GameObject g)
+    public void ExecuteLeave()
     {
         active = false;
     }

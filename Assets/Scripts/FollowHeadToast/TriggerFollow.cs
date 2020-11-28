@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Action : MonoBehaviour
+public class TriggerFollow : MonoBehaviour
 {
+    public FollowingRotation act;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +16,15 @@ public class Action : MonoBehaviour
     {
         
     }
-    public void executeEnter(GameObject g) 
-    { 
-    
-    }
-    public void executeStay(GameObject g)
+
+
+    void OnTriggerEnter(Collider other)
     {
 
-    }
-    public void executeLeave(GameObject g)
-    {
-
+        if (other.gameObject.tag == "joueur")
+        {
+            Debug.Log("Trigered !!!!");
+            act.ExecuteEnter();
+        }
     }
 }
