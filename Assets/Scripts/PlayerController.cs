@@ -8,6 +8,7 @@ public class PlayerController : Bytes.Controllers.FPSController
 {
 
     public float gluten = 100f;
+    public bool alive = true;
 
     public Rigidbody pickedItem;
     public Transform pickedItemTarget;
@@ -26,6 +27,24 @@ public class PlayerController : Bytes.Controllers.FPSController
         _Camera_Update();
         _Controls_Update();
         _PickItem_Update();
+    }
+
+    public void AddGluten(int amount)
+    {
+        gluten = Mathf.Min(100, gluten + amount);
+    }
+
+    public void RemoveGluten(int amount)
+    {
+        gluten = Mathf.Max(0, gluten - amount);
+        if (gluten <= 0) { Die(); }
+    }
+
+    protected void Die()
+    {
+        if (!alive) { return; }
+
+        alive = false;
     }
 
     protected virtual void _PickItem_Update()
@@ -47,13 +66,13 @@ public class PlayerController : Bytes.Controllers.FPSController
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            YeetusTheFeetus();
-        }
-
         if (pickedItem != null)
         {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                YeetusTheFeetus();
+                return;
+            }
             // Picked item update
             Vector3 dir = pickedItemTarget.position - pickedItem.transform.position;
             dir.Normalize();
