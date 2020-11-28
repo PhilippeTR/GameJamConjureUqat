@@ -6,6 +6,7 @@ TagManager:
   tags:
   - joueur
   - Pickable
+  - ResetToast
   layers:
   - Default
   - TransparentFX
