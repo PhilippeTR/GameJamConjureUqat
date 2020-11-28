@@ -8,6 +8,7 @@ public class PlayerController : Bytes.Controllers.FPSController
 {
 
     public float gluten = 100f;
+    public bool alive = true;
 
     public Rigidbody pickedItem;
     public Transform pickedItemTarget;
@@ -28,11 +29,24 @@ public class PlayerController : Bytes.Controllers.FPSController
         _Controls_Update();
         _PickItem_Update();
     }
+    
+    public void AddGluten(float amount)
+    {
+        gluten = Mathf.Clamp(gluten + amount, 0, 100);
+        if (gluten >= 100) { Die(); }
+    }
+
+    protected void Die()
+    {
+        if (!alive) { return; }
+
+        alive = false;
+    }
 
     private void HandleGlutenUpdate(Data data)
     {
         IntDataBytes casted = (IntDataBytes) data;
-        gluten += (float)casted.IntValue;
+        AddGluten((float)casted.IntValue);
     }
 
     protected virtual void _PickItem_Update()
@@ -54,13 +68,13 @@ public class PlayerController : Bytes.Controllers.FPSController
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            YeetusTheFeetus();
-        }
-
         if (pickedItem != null)
         {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                YeetusTheFeetus();
+                return;
+            }
             // Picked item update
             Vector3 dir = pickedItemTarget.position - pickedItem.transform.position;
             dir.Normalize();
