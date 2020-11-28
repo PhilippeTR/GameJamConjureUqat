@@ -12,7 +12,7 @@ public class CrunchyToastTrap : MonoBehaviour
     {
         if (other.tag == "joueur")
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
             EventManager.Dispatch(eventDispatchName + crunchyID, new ObjectDataBytes(other.transform));
             EventManager.Dispatch("playSound", new PlaySoundData("crunchy" + Random.Range(1, 2)));
         }

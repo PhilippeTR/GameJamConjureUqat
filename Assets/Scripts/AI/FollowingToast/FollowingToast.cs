@@ -16,11 +16,14 @@ public class FollowingToast : BaseAIController
     protected override void Update()
     {
         base.Update();
-        if (target != null) { return; }
-        if (Vector3.Distance(this.transform.position, watchedTarget.position) <= distanceStartFollow)
+
+        if (target != null)
         {
-            SetTarget(watchedTarget);
+            float dis = GetDistanceFromTarget();
+            // Try Start following
+            if (dis <= distanceStartFollow) { SetTarget(watchedTarget); }
         }
+
     }
 
 }

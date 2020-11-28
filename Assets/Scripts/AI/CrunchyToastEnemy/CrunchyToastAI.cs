@@ -6,15 +6,27 @@ using Bytes;
 public class CrunchyToastAI : BaseAIController
 {
 
+    private Vector3 initialPos;
+
     public string prefix = "CrunchyToastEnemy";
     public int crunchyID;
     public GenericAnimationStateMachine animController;
+    public float inactiveSpeed = 0.25f;
+
+    private bool moving = false;
+    private bool canReturnToInitialPos = false;
+
+    private Animate delayChasePlayer;
+    private Animate delayCanReturnToInitPos;
 
     protected override void Awake()
     {
         base.Awake();
         animController = GetComponentInChildren<GenericAnimationStateMachine>();
         animController.SetLoopedState(CrunchyToastAnim.Idle, prefix, true);
+
+        initialPos = this.transform.position;
+        agent.speed = inactiveSpeed;
     }
 
     protected void Start()
@@ -24,7 +36,26 @@ public class CrunchyToastAI : BaseAIController
 
     protected override void Update()
     {
-        base.Update();
+        if (target != null)
+        {
+            float dis = GetDistanceFromTarget();
+
+            agent.SetDestination(target.position);
+
+            // Stop following player if far enough
+            if (dis >= distanceStopFollowing && moving && canReturnToInitialPos) { ReturnToInitialPos(); }
+        }
+        else
+        {
+            // Return to initial pos
+            float dis = Vector3.Distance(this.transform.position, initialPos);
+            if (dis <= 0.3f)
+            {
+                animController.SetLoopedState(CrunchyToastAnim.Idle, prefix, true);
+                agent.speed = inactiveSpeed;
+            }
+            agent.SetDestination(initialPos);
+        }
     }
 
     // This receives a transform (the player transform)
@@ -34,12 +65,28 @@ public class CrunchyToastAI : BaseAIController
 
         ObjectDataBytes objData = (ObjectDataBytes)data;
         SetTarget((Transform)objData.ObjectValue);
-        Animate.Delay(2f, ()=> {
+        canReturnToInitialPos = false;
+
+        delayChasePlayer = Animate.Delay(2f, ()=> {
+            moving = true;
             agent.speed = 3.5f;
             animController.SetLoopedState(CrunchyToastAnim.Walking, prefix, true);
+            // Has 3 seconds to close gap between him and player before having to return to inital pos if hes too far from player
+            delayCanReturnToInitPos = Animate.Delay(3f, ()=> {
+                canReturnToInitialPos = true;
+            });
         });
     }
 
+    protected void ReturnToInitialPos()
+    {
+        target = null;
+        moving = false;
+        canReturnToInitialPos = false;
+
+        delayChasePlayer?.Stop(false);
+        delayCanReturnToInitPos?.Stop(false);
+    }
 
     public class CrunchyToastAnim : BaseAnimState
     {
