@@ -28,10 +28,10 @@ public class BaseAIController : MonoBehaviour
         {
             float dis = GetDistanceFromTarget();
 
+            agent.SetDestination(target.position);
+
             // Stop following player if far enough
             if (dis >= distanceStopFollowing) { target = null; }
-
-            agent.SetDestination(target.position);
         }
     }
 
