@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7069096059767712592}
   - component: {fileID: 7069096059767712595}
   - component: {fileID: 7069096059767712594}
-  - component: {fileID: 7069096059767712593}
   m_Layer: 0
   m_Name: Toast
   m_TagString: Untagged
@@ -96,20 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7069096059767712593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7069096059767712596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef74cd3a8938f74d8ae07eddc71d749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 7069096060326296924}
-  opened: 0
 --- !u!1 &7069096060324303509
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,9 +186,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7069096060336763373}
+  - component: {fileID: 450749696}
+  - component: {fileID: 450749695}
   m_Layer: 0
   m_Name: PorteToast
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,3 +210,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &450749696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069096060336763372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3350906, y: 3.8133044, z: 2.872014}
+  m_Center: {x: -0.018061161, y: 1.9970274, z: -0.023648739}
+--- !u!114 &450749695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069096060336763372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef74cd3a8938f74d8ae07eddc71d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyNeeded: key1
+  anim: {fileID: 7069096060326296924}
+  opened: 0
