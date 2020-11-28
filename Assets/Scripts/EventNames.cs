@@ -8,4 +8,5 @@ public class EventNames
 {
     static public string playerGlutenUpdate = "playerGlutenUpdate";
     static public string toastFalls = "toastFalls";
+    static public string interactionTextUpdate = "interactionTextUpdate";
 }
