@@ -76,6 +76,7 @@
             </e>
             <e p="UtilsManager.cs" t="Include" />
           </e>
+          <e p="CollectableObject.cs" t="Include" />
           <e p="Damage.cs" t="Include" />
           <e p="EventNames.cs" t="Include" />
           <e p="Fall.cs" t="Include" />
@@ -100,6 +101,7 @@
               <e p="Rotate.cs" t="Include" />
             </e>
           </e>
+          <e p="Progession.cs" t="Include" />
           <e p="SoundManager.cs" t="Include" />
           <e p="ToastFly.cs" t="Include" />
           <e p="UI" t="Include">
