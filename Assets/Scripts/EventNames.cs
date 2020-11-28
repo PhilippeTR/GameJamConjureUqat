@@ -7,4 +7,5 @@ using System.Threading.Tasks;
 public class EventNames
 {
     static public string playerGlutenUpdate = "playerGlutenUpdate";
+    static public string toastFalls = "toastFalls";
 }

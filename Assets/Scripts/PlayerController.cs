@@ -18,6 +18,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     public void Start()
     {
         pickedItem = null;
+        EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
     }
 
     protected override void Update()
@@ -28,16 +29,11 @@ public class PlayerController : Bytes.Controllers.FPSController
         _Controls_Update();
         _PickItem_Update();
     }
-
+    
     public void AddGluten(int amount)
     {
-        gluten = Mathf.Min(100, gluten + amount);
-    }
-
-    public void RemoveGluten(int amount)
-    {
-        gluten = Mathf.Max(0, gluten - amount);
-        if (gluten <= 0) { Die(); }
+        gluten = Mathf.Clamp(gluten + amount, 0, 100);
+        if (gluten >= 100) { Die(); }
     }
 
     protected void Die()
@@ -45,6 +41,12 @@ public class PlayerController : Bytes.Controllers.FPSController
         if (!alive) { return; }
 
         alive = false;
+    }
+
+    private void HandleGlutenUpdate(Data data)
+    {
+        IntDataBytes casted = (IntDataBytes) data;
+        gluten += AddGluten((float)casted.IntValue);
     }
 
     protected virtual void _PickItem_Update()
@@ -56,7 +58,7 @@ public class PlayerController : Bytes.Controllers.FPSController
                 pickedItem.freezeRotation = false;
                 pickedItem = null;
             }
-            else if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, 3f))
+            else if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, Mathf.Infinity))
             {
                 if (hit.transform.tag == "Pickable")
                 {
