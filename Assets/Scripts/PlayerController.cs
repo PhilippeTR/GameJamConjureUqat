@@ -50,9 +50,10 @@ public class PlayerController : Bytes.Controllers.FPSController
     
     public void AddGluten(float amount)
     {
-        gluten = Mathf.Clamp(gluten + (amount * Settings.DifficultyMultiplier), 0, 100);
-        EventManager.Dispatch("playSound", new PlaySoundData("Damage"));
-        
+
+        gluten = Mathf.Clamp(gluten + amount, 0, 100);
+
+        if (amount > 0) { EventManager.Dispatch("playSound", new PlaySoundData("Damage")); }
         if (gluten >= 100) { Die(); }
 
         glutenBar.SetHealth(gluten);

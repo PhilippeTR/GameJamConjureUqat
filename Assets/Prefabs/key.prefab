@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8401298098830532316}
   - component: {fileID: 8401298098830532317}
-  - component: {fileID: 8401298098830532306}
+  - component: {fileID: 1636456629302892284}
   m_Layer: 0
   m_Name: key
   m_TagString: Pickable
@@ -322,7 +322,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9663434
   m_Center: {x: 0, y: 0.4663434, z: 0}
---- !u!114 &8401298098830532306
+--- !u!114 &1636456629302892284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8401298098830532319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bf14e67061e1854fb8c5fc03db0dcd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a6ed2728366ba049ae27abcdfe36c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: key1
