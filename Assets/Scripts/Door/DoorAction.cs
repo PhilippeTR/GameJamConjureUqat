@@ -48,10 +48,6 @@ public class DoorAction : MonoBehaviour
         Debug.Log("Entered");
         EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("E - interact"));
     }
-    public void ExecuteStay(GameObject g)
-    {
-
-    }
     public void ExecuteLeave()
     {
         isNear = false;
