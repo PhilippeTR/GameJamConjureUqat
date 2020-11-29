@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+public class TriggerDoor : MonoBehaviour
 {
-    public Action act;
+    public DoorAction act;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,16 @@ public class Trigger : MonoBehaviour
         if (other.gameObject.tag == "joueur")
         {
             Debug.Log("Trigered !!!!");
-            act.executeEnter(other.gameObject);
+            act.ExecuteEnter();
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+
+        if (other.gameObject.tag == "joueur")
+        {
+            Debug.Log("Trigered !!!!");
+            act.ExecuteLeave();
         }
     }
 }
