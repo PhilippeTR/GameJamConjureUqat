@@ -9,6 +9,7 @@ public class Fall : MonoBehaviour
 
     [SerializeField] private GameObject toastEnemy;
     [SerializeField] private float xSpeed, ySpeed, zSpeed;
+    private bool _IsFallen = false;
 
     private void Start()
     {
@@ -22,7 +23,12 @@ public class Fall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("joueur"))
         {
-            fallingToast();
+            if (_IsFallen == false)
+            {
+                fallingToast();
+                _IsFallen = true;
+            }
+            
         }
     }
     
@@ -30,6 +36,7 @@ public class Fall : MonoBehaviour
     private void fallingToast()
     {
         toastEnemy.SetActive(true);
+        EventManager.Dispatch("playSound", new PlaySoundData("FallingToastNoise"));
         toastEnemy.GetComponent<Rigidbody>().velocity = new Vector3(xSpeed, ySpeed, zSpeed);
         
     }

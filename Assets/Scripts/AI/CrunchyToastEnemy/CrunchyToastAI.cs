@@ -72,7 +72,7 @@ public class CrunchyToastAI : BaseAIController
         delayChasePlayer = Animate.Delay(2f, ()=>
         {
             moving = true;
-            agent.speed = 3.5f;
+            agent.speed = 4f;
             EventManager.Dispatch("playSound", new PlaySoundData("HORROR_HelpMe002"));
             animController.SetLoopedState(CrunchyToastAnim.Walking, prefix, true);
 
