@@ -3,7 +3,27 @@ guid: af6f88e114254c84ab4472e648060f98
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MoulureBas
+    second: {fileID: 2100000, guid: 3c4be4e3ba9b9bd4abd14150628dfd5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MoulureHaut
+    second: {fileID: 2100000, guid: e8a3f697510c361449d3668747059b00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapierPeint
+    second: {fileID: 2100000, guid: 8c4ee415c97983649b747977fcf3d273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: bfd375ccae3096b418465b7ee4228caa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
