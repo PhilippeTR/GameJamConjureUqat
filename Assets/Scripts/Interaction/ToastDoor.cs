@@ -38,8 +38,8 @@ public class ToastDoor : MonoBehaviour
     {
         if (other.tag == "joueur")
         {
-            string msg = "E - You need a key!";
-            if (HasKey()) { msg = "E - Open door"; }
+            string msg = "E - Trouvez la clé!";
+            if (HasKey()) { msg = "E - Ouvrir la porte"; }
             EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes(msg));
         }
     }

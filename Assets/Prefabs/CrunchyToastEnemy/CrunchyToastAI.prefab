@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: {fileID: 1617005771}
+  delay: 1.5
 --- !u!114 &1617005771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   overrideTarget: {x: 0, y: 0, z: 0}
-  distanceStopFollowing: 11
+  distanceStopFollowing: 14
   prefix: CrunchyToastEnemy
   crunchyID: 1
   animController: {fileID: 0}
