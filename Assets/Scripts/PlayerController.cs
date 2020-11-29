@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using Bytes;
 
@@ -49,9 +50,10 @@ public class PlayerController : Bytes.Controllers.FPSController
     
     public void AddGluten(float amount)
     {
+
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
-        EventManager.Dispatch("playSound", new PlaySoundData("Damage"));
-        
+
+        if (amount > 0) { EventManager.Dispatch("playSound", new PlaySoundData("Damage")); }
         if (gluten >= 100) { Die(); }
 
         glutenBar.SetHealth(gluten);
@@ -61,6 +63,11 @@ public class PlayerController : Bytes.Controllers.FPSController
     {
         if (!alive) { return; }
 
+        EventManager.Dispatch("fadeToBlack", null);
+
+        Animate.Delay(3f, ()=> {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        });
 
         alive = false;
     }

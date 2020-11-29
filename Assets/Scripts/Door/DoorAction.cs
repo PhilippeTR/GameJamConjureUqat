@@ -46,7 +46,7 @@ public class DoorAction : MonoBehaviour
     {
         isNear = true;
         Debug.Log("Entered");
-        EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("E - interact"));
+        EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("E - Ouvrir la porte"));
     }
     public void ExecuteLeave()
     {
