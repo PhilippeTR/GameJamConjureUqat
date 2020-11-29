@@ -69,7 +69,7 @@ public class CrunchyToastAI : BaseAIController
 
         delayChasePlayer = Animate.Delay(2f, ()=> {
             moving = true;
-            agent.speed = 3.5f;
+            agent.speed = 4f;
             animController.SetLoopedState(CrunchyToastAnim.Walking, prefix, true);
             // Has 3 seconds to close gap between him and player before having to return to inital pos if hes too far from player
             delayCanReturnToInitPos = Animate.Delay(3f, ()=> {
