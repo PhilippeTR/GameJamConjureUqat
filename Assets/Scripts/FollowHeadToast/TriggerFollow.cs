@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,6 +29,16 @@ public class TriggerFollow : MonoBehaviour
             audio.loop = true;
             audio.Play();
             act.ExecuteEnter();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "joueur")
+        {
+
+            audio.Stop();
+           
         }
     }
 }
