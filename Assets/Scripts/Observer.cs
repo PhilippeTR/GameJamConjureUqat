@@ -12,10 +12,19 @@ public class Observer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("joueur"))
         {
+            
             _data = new IntDataBytes(damage.getValue());
             EventManager.Dispatch("playerGlutenUpdate", _data);
+            other.enabled = false;
+            Invoke("Enabled", 30);
+            other.enabled = true;
+
         }
     }
-    
 
+    void Enabled()
+    {
+        //do nothing
+    }
+    
 }

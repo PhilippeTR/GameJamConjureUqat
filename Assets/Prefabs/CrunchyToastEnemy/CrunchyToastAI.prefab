@@ -199,11 +199,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   overrideTarget: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   distanceStopFollowing: 11
+=======
+  distanceStopFollowing: 8
+>>>>>>> main
   prefix: CrunchyToastEnemy
   crunchyID: 1
   animController: {fileID: 0}
   inactiveSpeed: 0.25
+<<<<<<< HEAD
+=======
+  voice: {fileID: 0}
+>>>>>>> main
 --- !u!1 &5690495334177018359
 GameObject:
   m_ObjectHideFlags: 0

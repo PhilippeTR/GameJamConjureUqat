@@ -16,6 +16,7 @@ public class ToastDoor : MonoBehaviour
         if (opened) { return; }
 
         opened = true;
+        EventManager.Dispatch("playSound", new PlaySoundData("ToastDoor_Open"));
         anim.Play("ToastDoor_open", -1, 0);
 
         Destroy(this.GetComponent<Collider>());
@@ -28,7 +29,8 @@ public class ToastDoor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (HasKey()) { OpenDoor(); }
+            if (HasKey())
+            { OpenDoor(); }
         }
     }
 

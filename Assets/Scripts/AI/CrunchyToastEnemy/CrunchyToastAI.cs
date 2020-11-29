@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Bytes;
@@ -41,6 +42,7 @@ public class CrunchyToastAI : BaseAIController
             float dis = GetDistanceFromTarget();
 
             agent.SetDestination(target.position);
+            
 
             // Stop following player if far enough
             if (dis >= distanceStopFollowing && moving && canReturnToInitialPos) { ReturnToInitialPos(); }
@@ -67,10 +69,17 @@ public class CrunchyToastAI : BaseAIController
         SetTarget((Transform)objData.ObjectValue);
         canReturnToInitialPos = false;
 
-        delayChasePlayer = Animate.Delay(2f, ()=> {
+        delayChasePlayer = Animate.Delay(2f, ()=>
+        {
             moving = true;
+<<<<<<< HEAD
             agent.speed = 4f;
+=======
+            agent.speed = 3.5f;
+            EventManager.Dispatch("playSound", new PlaySoundData("HORROR_HelpMe002"));
+>>>>>>> main
             animController.SetLoopedState(CrunchyToastAnim.Walking, prefix, true);
+
             // Has 3 seconds to close gap between him and player before having to return to inital pos if hes too far from player
             delayCanReturnToInitPos = Animate.Delay(3f, ()=> {
                 canReturnToInitialPos = true;
