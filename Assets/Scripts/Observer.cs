@@ -7,6 +7,7 @@ public class Observer : MonoBehaviour
 {
     [SerializeField] private Damage damage;
     private IntDataBytes _data;
+    public float delay = 1.5f;
     
     void OnTriggerEnter (Collider other)
     {
@@ -15,16 +16,14 @@ public class Observer : MonoBehaviour
             
             _data = new IntDataBytes(damage.getValue());
             EventManager.Dispatch("playerGlutenUpdate", _data);
-            other.enabled = false;
-            Invoke("Enabled", 30);
-            other.enabled = true;
+            GetComponent<Collider>().enabled = false;
+            
+            Animate.Delay(delay, () =>
+            {
+                GetComponent<Collider>().enabled = true;
+            });
 
         }
     }
 
-    void Enabled()
-    {
-        //do nothing
-    }
-    
 }

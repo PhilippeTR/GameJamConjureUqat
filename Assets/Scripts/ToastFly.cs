@@ -1,26 +1,33 @@
-﻿using UnityEngine;
+﻿using System;
+using Bytes;
+using UnityEngine;
 
 
 public class ToastFly : MonoBehaviour
 {
-
-
-    public float speed;
+    public float xSpeed, ySpeed, zSpeed;
 
     private Vector3 _tempTransform;
+    private bool _HasFlown = false;
     
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        _tempTransform = Vector3.right;
 
+    void OnTriggerEnter (Collider other)
+    {
+        if (other.gameObject.CompareTag("joueur"))
+        {
+            if (_HasFlown == false)
+            {
+                FlyingToast();
+                _HasFlown = true;
+            }
+            
+        }
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void FlyingToast()
     {
-        transform.Translate(_tempTransform * (speed * Time.deltaTime));
-
+        Vector3 speed = new Vector3(xSpeed, ySpeed, zSpeed);
+        GetComponent<Rigidbody>().velocity = speed;
+        EventManager.Dispatch("playSounds", new PlaySoundData("FlyingToast"));
     }
 }
