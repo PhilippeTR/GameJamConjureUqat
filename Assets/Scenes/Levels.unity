@@ -6458,6 +6458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: key
       objectReference: {fileID: 0}
+    - target: {fileID: 8401298098830532319, guid: 6a71ed993895e634a89d8fdcac5411ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a71ed993895e634a89d8fdcac5411ec, type: 3}
 --- !u!1001 &537783897
@@ -22708,6 +22712,10 @@ PrefabInstance:
     - target: {fileID: 1617005768, guid: 01b2dff83325b68429a683d1da075603, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617005772, guid: 01b2dff83325b68429a683d1da075603, type: 3}
+      propertyPath: canDealDmg
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5690495333278271805, guid: 01b2dff83325b68429a683d1da075603, type: 3}
       propertyPath: m_Name
