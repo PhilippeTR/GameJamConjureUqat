@@ -26,17 +26,15 @@ public class FollowingToast : BaseAIController
             float dis = GetDistanceFromTarget();
 
             agent.SetDestination(target.position);
-            animController.SetLoopedState(ToasterAnim.Walking, prefix, true);
 
             // Stop following player if far enough
-            if (dis >= distanceStopFollowing) { target = null; }
+            if (dis >= distanceStopFollowing) { target = null; animController.SetLoopedState(ToasterAnim.Idle, prefix, true); }
         }
         else
         {
-            animController.SetLoopedState(ToasterAnim.Idle, prefix, true);
             float dis = Vector3.Distance(this.transform.position, watchedTarget.transform.position);
             // Try Start following
-            if (dis <= distanceStartFollow) { SetTarget(watchedTarget); }
+            if (dis <= distanceStartFollow) { SetTarget(watchedTarget); animController.SetLoopedState(ToasterAnim.Walking, prefix, true); }
         }
     }
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27439faa3c8278c438566c0e74426668
+guid: a4c91f178287ff44c9882e216211479a
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Matelas
+    second: {fileID: 2100000, guid: 3867219aaa4ab164298b869a19511f50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oreiller
+    second: {fileID: 2100000, guid: 34834b5d398f07442be2aa4031a3f8d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 4263126a602b9e5479e5d180e037051a, type: 2}
+    second: {fileID: 2100000, guid: 845d2977cbae4e64bb22b9a39260fe16, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

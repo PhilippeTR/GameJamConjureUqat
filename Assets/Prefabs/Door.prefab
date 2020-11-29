@@ -112,7 +112,7 @@ MonoBehaviour:
   isNear: 0
   opening: 0
   opened: 0
-  time: 50
+  time: 180
   speedY: -50
   timer: 10
   angle: -0.7
