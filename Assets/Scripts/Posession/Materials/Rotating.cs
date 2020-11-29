@@ -25,6 +25,7 @@ public class Rotating : MonoBehaviour
     }
     public void Stop() {
         active = false;
-        underling.Stop();
+        if(underling!=null)
+            underling.Stop();
     }
 }
