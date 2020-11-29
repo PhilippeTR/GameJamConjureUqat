@@ -15,16 +15,14 @@ public class Observer : MonoBehaviour
             
             _data = new IntDataBytes(damage.getValue());
             EventManager.Dispatch("playerGlutenUpdate", _data);
-            other.enabled = false;
-            Invoke("Enabled", 30);
-            other.enabled = true;
+            GetComponent<Collider>().enabled = false;
+            
+            Animate.Delay(3f, () =>
+            {
+                GetComponent<Collider>().enabled = true;
+            });
 
         }
     }
 
-    void Enabled()
-    {
-        //do nothing
-    }
-    
 }
