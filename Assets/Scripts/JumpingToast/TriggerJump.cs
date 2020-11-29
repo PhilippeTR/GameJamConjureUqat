@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Bytes;
 using UnityEngine;
 
 public class TriggerJump : MonoBehaviour
@@ -26,7 +27,12 @@ public class TriggerJump : MonoBehaviour
         {
             started = true;
             Debug.Log("joueur");
-            Bytes.Animate.Delay(Random.Range(0f, 1.5f), jumper.StartGravity);
+            Bytes.Animate.Delay(Random.Range(0f, 1.5f), ()=>
+            {
+                jumper.StartGravity();
+                EventManager.Dispatch("playSound", new PlaySoundData("ToasterNoise"));
+            });
+            
         }
     }
 }
