@@ -9,6 +9,7 @@ TagManager:
   - ResetToast
   - Interactable
   - door
+  - fish
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Effects
   - 
   - 
   - 
