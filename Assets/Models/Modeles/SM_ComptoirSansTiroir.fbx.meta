@@ -3,7 +3,17 @@ guid: beb2ec2a88f10d3409b9e751097705b7
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Comptoir
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ComptoirDessus_Dessous
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

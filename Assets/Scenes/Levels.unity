@@ -252,6 +252,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (3)
@@ -2470,6 +2478,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirSansTiroir (2)
@@ -3810,6 +3822,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (1)
@@ -3945,6 +3965,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (5)
@@ -5725,6 +5753,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (6)
@@ -6792,6 +6828,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3211
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirTiroir (3)
@@ -9535,6 +9575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (4)
@@ -10687,6 +10731,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirTiroir (2)
@@ -11228,6 +11280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -107.759
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (7)
@@ -12792,6 +12848,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirSansTiroir (1)
@@ -12998,6 +13058,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirTiroir (1)
@@ -14242,6 +14310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -86.506
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (6)
@@ -16098,6 +16170,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (2)
@@ -21815,6 +21895,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (3)
@@ -22412,6 +22496,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1588473118104799556, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118220823393, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118396975234, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118427261078, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e81cc5197e16f4d5ca99bad79723f8d1, type: 2}
     - target: {fileID: 1588473118493589180, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.76
@@ -22460,6 +22560,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pool
       objectReference: {fileID: 0}
+    - target: {fileID: 1588473118502926962, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118546335479, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118597721750, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118804249224, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473118876131712, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
     - target: {fileID: 1588473119068607964, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05203
@@ -22532,6 +22652,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -37.571
       objectReference: {fileID: 0}
+    - target: {fileID: 1588473119128211032, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473119140171145, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
+    - target: {fileID: 1588473119189098914, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5592094394682142103, guid: 650cd64ac0fb2e14990cf5ef581a707f, type: 3}
     - target: {fileID: 1588473119277984142, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.00000008940696
@@ -22575,6 +22707,10 @@ PrefabInstance:
     - target: {fileID: 1588473119566933699, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664364255415330693, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9022461954818047168, guid: 0780c5449ac5f6b41a8133fdadfa72a5, type: 3}
       propertyPath: m_Sprite
@@ -23310,6 +23446,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut
@@ -23424,6 +23568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (8)
@@ -25595,6 +25743,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 69602955d9838a4468e19f3950aa17f1, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirTiroir
@@ -26286,6 +26442,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4142
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: beb2ec2a88f10d3409b9e751097705b7, type: 3}
       propertyPath: m_Name
       value: SM_ComptoirSansTiroir
@@ -27455,6 +27615,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (5)
@@ -31688,6 +31852,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (4)
@@ -33303,6 +33475,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5589
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
+    - target: {fileID: -7511558181221131132, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: cd1e29e4cd787274fa05409dd7d3c7a0, type: 3}
       propertyPath: m_Name
       value: SM_ArmoireHaut (7)
@@ -33886,6 +34066,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (1)
@@ -35259,6 +35443,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (9)
@@ -35670,6 +35858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (10)
@@ -36642,6 +36834,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10a7c179f17ea5c4ab1eead08f336f90, type: 2}
     - target: {fileID: 919132149155446097, guid: 8e59d80739229a7429e4abf266ddf207, type: 3}
       propertyPath: m_Name
       value: SM_Armoire (2)
@@ -40113,7 +40309,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -4973734387028869240, guid: 630affe3b1e77c24baeca84c45270421, type: 3}
-  - {fileID: -266410721278517868, guid: 630affe3b1e77c24baeca84c45270421, type: 3}
+  - {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
