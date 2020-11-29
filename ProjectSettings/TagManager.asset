@@ -8,6 +8,7 @@ TagManager:
   - Pickable
   - ResetToast
   - Interactable
+  - door
   layers:
   - Default
   - TransparentFX
