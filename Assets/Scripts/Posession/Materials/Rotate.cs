@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    public Rotate underling;
     public int xSpeed;
     public int ySpeed;
     public int zSpeed;
     Vector3 v;
-    public int speed;
+	public int speed;
+    public bool active = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(v, speed * Time.deltaTime);
+        if(active)
+            transform.Rotate(v, speed * Time.deltaTime);
     }
 }
