@@ -31,15 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecb44a6d-a39d-4577-be6e-2605ffcba917" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJamConjureUqat/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJamConjureUqat/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJamConjureUqat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJamConjureUqat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CrunchyToastEnemy/CrunchyToastAI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CrunchyToastEnemy/CrunchyToastAI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Samuel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Samuel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/William.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/William.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/CrunchyToastEnemy/CrunchyToastAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/CrunchyToastEnemy/CrunchyToastAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollectableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollectableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ToastDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ToastDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FlyingToast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FlyingToast.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Observer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Observer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ToastFly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ToastFly.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +48,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/26FF2A7B-056A-476B-9736-27DB643EE7D8/12/ae933133/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/93CC9D9D-D3CB-438F-827B-811749B7E486/73/9c64a67b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/aa/f4855ae5/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ToastFly.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlutenBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Observer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction/ToastDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/CrunchyToastEnemy/CrunchyToastAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CollectableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Unity-FPSController/Scripts/FPSController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ToastFly.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Observer.cs" />
       </list>
     </option>
   </component>
@@ -97,10 +93,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15248">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15248" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -233,45 +229,23 @@
     </state>
     <state width="1065" height="322" key="GridCell.Tab.3.right/2560.754.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606602348184" />
     <state width="1877" height="421" key="GridCell.Tab.3.right/2560.754.1920.1040/0.0.2560.1400@2560.754.1920.1040" timestamp="1606616961218" />
+    <state x="3183" y="979" width="672" height="678" key="search.everywhere.popup" timestamp="1606626748186">
+      <screen x="2560" y="754" width="1920" height="1040" />
+    </state>
+    <state x="3183" y="979" width="672" height="678" key="search.everywhere.popup/2560.754.1920.1040/0.0.2560.1400@2560.754.1920.1040" timestamp="1606626748186" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GlutenBar.cs</url>
-          <line>20</line>
-          <properties documentPath="E:\Jams\Sabotage\GameJamConjureUqat\Assets\Scripts\GlutenBar.cs" initialLine="20">
-            <startOffsets>
-              <option value="379" />
-            </startOffsets>
-            <endOffsets>
-              <option value="401" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>38</line>
-          <properties documentPath="E:\Jams\Sabotage\GameJamConjureUqat\Assets\Scripts\PlayerController.cs" initialLine="37">
-            <startOffsets>
-              <option value="835" />
-            </startOffsets>
-            <endOffsets>
-              <option value="881" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AI/CrunchyToastEnemy/CrunchyToastAI.cs</url>
           <line>76</line>
           <properties documentPath="E:\Jams\Sabotage\GameJamConjureUqat\Assets\Scripts\AI\CrunchyToastEnemy\CrunchyToastAI.cs" initialLine="76">
             <startOffsets>
-              <option value="2237" />
+              <option value="2235" />
             </startOffsets>
             <endOffsets>
-              <option value="2307" />
+              <option value="2305" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
