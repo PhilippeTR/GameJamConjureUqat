@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FishingMiniGame : MonoBehaviour
+public class Catcher : MonoBehaviour
 {
+    public FishingMiniGame a;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,15 @@ public class FishingMiniGame : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.tag == "fish")
+        {
+            a.AddPoint();
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour
+public class Rotating : MonoBehaviour
 {
-    public Rotate underling;
+    public Rotating underling;
     public int xSpeed;
     public int ySpeed;
     public int zSpeed;
@@ -22,5 +22,9 @@ public class Rotate : MonoBehaviour
     {
         if(active)
             transform.Rotate(v, speed * Time.deltaTime);
+    }
+    public void Stop() {
+        active = false;
+        underling.Stop();
     }
 }
