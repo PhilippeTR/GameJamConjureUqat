@@ -3,7 +3,17 @@ guid: facd00f0b0be84042b3028ec82ca58ee
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Etiquette
+    second: {fileID: 2100000, guid: 8d2e53716e9e13448a9803bc8b3c2555, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PotMargarineBlanc
+    second: {fileID: 2100000, guid: b4d0afb9ffe7a934497ca88db7927071, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

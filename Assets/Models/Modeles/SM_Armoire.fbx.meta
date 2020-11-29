@@ -3,7 +3,22 @@ guid: 8e59d80739229a7429e4abf266ddf207
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armoire
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poignee
+    second: {fileID: 2100000, guid: 1e0cb1c88b18845498f8a989ae31d888, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiroir
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -3,7 +3,27 @@ guid: 69602955d9838a4468e19f3950aa17f1
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Comptoir
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ComptoirDessus
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Penture
+    second: {fileID: 2100000, guid: 1e0cb1c88b18845498f8a989ae31d888, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiroir
+    second: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

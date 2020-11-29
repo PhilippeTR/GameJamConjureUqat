@@ -3,7 +3,22 @@ guid: c40cec4435a61174381e460110a1f92f
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepto_Bouchon
+    second: {fileID: 2100000, guid: 62d6acbba80cc8f43ac0ab0d18239724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepto_Bouteille
+    second: {fileID: 2100000, guid: 5cea44fe1aad7a24eba42a9e17256841, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pepto_Etiquette
+    second: {fileID: 2100000, guid: 62d6acbba80cc8f43ac0ab0d18239724, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
