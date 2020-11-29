@@ -10,6 +10,7 @@ TagManager:
   - Interactable
   - door
   - fish
+  - Ground
   layers:
   - Default
   - TransparentFX

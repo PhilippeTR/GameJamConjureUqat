@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toastEnemy: {fileID: 4752611182183682244}
   xSpeed: 0
-  ySpeed: -100
+  ySpeed: -10
   zSpeed: 0
 --- !u!1 &6319529437519677159
 GameObject:
@@ -4987,7 +4987,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8335667625071944164, guid: f07ae9f4682b59947b245082b76738eb, type: 3}
       propertyPath: value
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8335667625071944166, guid: f07ae9f4682b59947b245082b76738eb, type: 3}
       propertyPath: m_Height
