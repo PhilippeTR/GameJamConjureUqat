@@ -6,6 +6,8 @@ using Bytes;
 
 public class FishingMiniGame : MonoBehaviour
 {
+    public GameObject gift;
+    public GameObject jumpscare;
     public GameObject catcher;
     public List<Rotating> rs;
     public int point = 0;
@@ -61,6 +63,7 @@ public class FishingMiniGame : MonoBehaviour
             catcher.SetActive(false);
             catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("You have caught all the toasts!"));
+            
         }
         else {
 
@@ -87,6 +90,10 @@ public class FishingMiniGame : MonoBehaviour
             catcher.SetActive(false);
             catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("You have caught all the toasts!"));
+            if(gift !=null)
+                gift.SetActive(true);
+            if (jumpscare != null)
+                jumpscare.SetActive(true);
         }
 
     }
