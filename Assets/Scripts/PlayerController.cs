@@ -31,12 +31,13 @@ public class PlayerController : Bytes.Controllers.FPSController
         _Camera_Update();
         _Controls_Update();
         _PickItem_Update();
+        
     }
     
     public void AddGluten(float amount)
     {
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
-        glutenBar.SetHealth(gluten);
+        glutenBar.SetHealth(gluten/60);
         if (gluten >= 100) { Die(); }
     }
 
