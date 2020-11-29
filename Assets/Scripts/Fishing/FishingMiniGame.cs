@@ -55,10 +55,21 @@ public class FishingMiniGame : MonoBehaviour
     }
     public void ExecuteEnter()
     {
-        inGame = true;
-        catcher.SetActive(true);
-        catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("[i,j,k,l]: control Net [1]: " + ((toaster) ? "Toaster" : "Not Available (find it, then Collect it with [1])")));
+        if (point > 2)
+        {
+            inGame = false;
+            catcher.SetActive(false);
+            catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("You have caught all the toasts!"));
+        }
+        else {
+
+            inGame = true;
+            catcher.SetActive(true);
+            catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("[i,j,k,l]: control Net [1]: " + ((toaster) ? "Toaster" : "Not Available (find it, then Collect it with [1])")));
+        }
+
     }
     public void ExecuteLeave()
     {
