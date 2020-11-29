@@ -22,13 +22,14 @@ public class FollowingRotation : MonoBehaviour
     {
         if (active)
         {
-            float deltaX = followed.transform.position.x - position.x;
+            /*float deltaX = followed.transform.position.x - position.x;
             float deltaY = followed.transform.position.y - position.y;
             float hypo = Mathf.Sqrt(deltaX * deltaX + deltaY * deltaY);
-            speedX = (deltaX/ hypo <= transform.rotation.x)? 1: -1;
+            speedX = (deltaX/ hypo <= transform.rotation.y)? (deltaX / hypo == transform.rotation.y) ? 0: 10 : -10;
             Debug.Log("X:"+ speedX + "Y:"+ speedY);
             Vector3 v = new Vector3(0, speedX, 0);
-            transform.Rotate(v, speed * Time.deltaTime);
+            transform.Rotate(v, speed * Time.deltaTime);*/
+            transform.LookAt(followed.transform);
         }
     }
     public void ExecuteEnter()

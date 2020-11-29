@@ -42,7 +42,7 @@ public class DoorAction : MonoBehaviour
         }
     }
 
-    public void ExecuteEnter(GameObject g)
+    public void ExecuteEnter()
     {
         isNear = true;
         Debug.Log("Entered");
@@ -52,7 +52,7 @@ public class DoorAction : MonoBehaviour
     {
 
     }
-    public void ExecuteLeave(GameObject g)
+    public void ExecuteLeave()
     {
         isNear = false;
         EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes(""));

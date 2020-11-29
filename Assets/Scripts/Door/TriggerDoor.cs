@@ -24,7 +24,16 @@ public class TriggerDoor : MonoBehaviour
         if (other.gameObject.tag == "joueur")
         {
             Debug.Log("Trigered !!!!");
-            act.ExecuteEnter(other.gameObject);
+            act.ExecuteEnter();
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+
+        if (other.gameObject.tag == "joueur")
+        {
+            Debug.Log("Trigered !!!!");
+            act.ExecuteLeave();
         }
     }
 }
