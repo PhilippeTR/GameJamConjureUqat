@@ -7,6 +7,8 @@ using Bytes;
 public class PlayerController : Bytes.Controllers.FPSController
 {
 
+    private GenericAnimationStateMachine animController;
+
     public float gluten = 100f;
     public bool alive = true;
 
@@ -22,16 +24,27 @@ public class PlayerController : Bytes.Controllers.FPSController
         pickedItem = null;
         EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
         glutenBar.SetMinHealth(0f);
+        animController = GetComponentInChildren<GenericAnimationStateMachine>();
     }
 
     protected override void Update()
     {
         if (!canBeControlled) { return; }
-        _Movement_Update();
+        float vitesse = _Movement_Update();
         _Camera_Update();
         _Controls_Update();
         _PickItem_Update();
-        
+
+        if (vitesse > 0)
+        {
+            PlayerAnim used = PlayerAnim.Walking;
+            if (vitesse > walkingSpeed) { used = PlayerAnim.Running; print("Running"); }
+            animController.SetLoopedState(used, "", true);
+        }
+        else
+        {
+            animController.SetLoopedState(PlayerAnim.Idle, "", true);
+        }
     }
     
     public void AddGluten(float amount)
@@ -44,6 +57,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     protected void Die()
     {
         if (!alive) { return; }
+
 
         alive = false;
     }
@@ -96,6 +110,19 @@ public class PlayerController : Bytes.Controllers.FPSController
         pickedItem.velocity = dir * 15f / (pickedItem.mass / 2f);
         pickedItem.freezeRotation = false;
         pickedItem = null;
+    }
+
+
+
+    public class PlayerAnim : BaseAnimState
+    {
+        public static PlayerAnim Walking = new PlayerAnim("Swagger Walk", 1f);
+        public static PlayerAnim Running = new PlayerAnim("Swagger Walk", 1.5f);
+        public static PlayerAnim Idle = new PlayerAnim("Idle", 1f);
+        public static PlayerAnim Die = new PlayerAnim("Idle", 1f);
+
+        public PlayerAnim(string pClipName, float pSpeed, int pNbVariations = -1) : base(pClipName, pSpeed, pNbVariations)
+        { }
     }
 
 }
