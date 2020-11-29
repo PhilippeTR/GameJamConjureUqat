@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using Bytes;
 
@@ -61,6 +62,11 @@ public class PlayerController : Bytes.Controllers.FPSController
     {
         if (!alive) { return; }
 
+        EventManager.Dispatch("fadeToBlack", null);
+
+        Animate.Delay(3f, ()=> {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        });
 
         alive = false;
     }

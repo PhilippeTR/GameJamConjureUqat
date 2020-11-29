@@ -8,6 +8,7 @@ public class Observer : MonoBehaviour
     [SerializeField] private Damage damage;
     private IntDataBytes _data;
     public float delay = 1.5f;
+    public bool canDealDmg = true;
     
     void OnTriggerEnter (Collider other)
     {
