@@ -23,10 +23,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     {
         pickedItem = null;
         EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
-        glutenBar.setMaxHealth(gluten);
-        animController = GetComponentInChildren<GenericAnimationStateMachine>();
-
-        animController.SetLoopedState(PlayerAnim.Idle);
+        glutenBar.SetMinHealth(0f);
     }
 
     protected override void Update()
@@ -52,7 +49,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     public void AddGluten(float amount)
     {
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
-        glutenBar.setHealth(gluten + amount);
+        glutenBar.SetHealth(gluten);
         if (gluten >= 100) { Die(); }
     }
 

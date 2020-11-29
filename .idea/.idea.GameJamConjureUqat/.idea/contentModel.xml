@@ -25,7 +25,16 @@
           <e p="dontdeleteme.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="BaseAIController.cs" t="Include" />
+          <e p="AI" t="Include">
+            <e p="BaseAIController.cs" t="Include" />
+            <e p="CrunchyToastEnemy" t="Include">
+              <e p="CrunchyToastAI.cs" t="Include" />
+              <e p="CrunchyToastTrap.cs" t="Include" />
+            </e>
+            <e p="FollowingToast" t="Include">
+              <e p="FollowingToast.cs" t="Include" />
+            </e>
+          </e>
           <e p="BaseScript" t="Include">
             <e p="Action.cs" t="Include" />
             <e p="Trigger.cs" t="Include" />
@@ -67,6 +76,7 @@
             </e>
             <e p="UtilsManager.cs" t="Include" />
           </e>
+          <e p="CollectableObject.cs" t="Include" />
           <e p="Damage.cs" t="Include" />
           <e p="EventNames.cs" t="Include" />
           <e p="Fall.cs" t="Include" />
@@ -75,6 +85,9 @@
           </e>
           <e p="GameManager.cs" t="Include" />
           <e p="GlutenBar.cs" t="Include" />
+          <e p="Interaction" t="Include">
+            <e p="ToastDoor.cs" t="Include" />
+          </e>
           <e p="JumpingToast" t="Include">
             <e p="JumpingForce.cs" t="Include" />
             <e p="ResetAnimation.cs" t="Include" />
@@ -88,7 +101,12 @@
               <e p="Rotate.cs" t="Include" />
             </e>
           </e>
+          <e p="Progession.cs" t="Include" />
+          <e p="SoundManager.cs" t="Include" />
           <e p="ToastFly.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="InteractionText.cs" t="Include" />
+          </e>
         </e>
         <e p="Sprites" t="Include">
           <e p="dontdeleteme.txt" t="Include" />
