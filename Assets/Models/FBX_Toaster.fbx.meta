@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 2d016f37831b0d741ad52a5b502498b0
+guid: 41d17a3220826054faee8dbb2e5ae6e1
 ModelImporter:
   serializedVersion: 20101
-  internalIDToNameTable:
-  - first:
-      74: -7480239763621934743
-    second: Toaster
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 1

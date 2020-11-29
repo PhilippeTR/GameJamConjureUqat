@@ -76,6 +76,9 @@ public class CrunchyToastAI : BaseAIController
             EventManager.Dispatch("playSound", new PlaySoundData("HORROR_HelpMe002"));
             animController.SetLoopedState(CrunchyToastAnim.Walking, prefix, true);
 
+            // Set atk collider on
+            GetComponentInChildren<Damage>().GetComponent<Collider>().gameObject.SetActive(true);
+
             // Has 3 seconds to close gap between him and player before having to return to inital pos if hes too far from player
             delayCanReturnToInitPos = Animate.Delay(3f, ()=> {
                 canReturnToInitialPos = true;
@@ -88,6 +91,8 @@ public class CrunchyToastAI : BaseAIController
         target = null;
         moving = false;
         canReturnToInitialPos = false;
+
+        GetComponentInChildren<Damage>().GetComponent<Collider>().gameObject.SetActive(false);
 
         delayChasePlayer?.Stop(false);
         delayCanReturnToInitPos?.Stop(false);

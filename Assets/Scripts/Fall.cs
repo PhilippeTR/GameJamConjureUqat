@@ -35,9 +35,12 @@ public class Fall : MonoBehaviour
 
     private void fallingToast()
     {
+        if (_IsFallen) { return; }
+
         toastEnemy.SetActive(true);
         EventManager.Dispatch("playSound", new PlaySoundData("FallingToastNoise"));
         toastEnemy.GetComponent<Rigidbody>().velocity = new Vector3(xSpeed, ySpeed, zSpeed);
-        
+
+        Destroy(toastEnemy, 2f);
     }
 }

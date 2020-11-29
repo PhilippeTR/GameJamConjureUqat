@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toastEnemy: {fileID: 4752611182183682244}
   xSpeed: 0
-  ySpeed: -100
+  ySpeed: -10
   zSpeed: 0
 --- !u!1001 &4752611182471451431
 PrefabInstance:
