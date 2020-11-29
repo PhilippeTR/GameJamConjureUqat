@@ -13,7 +13,7 @@ public class CollectableObjectHp : MonoBehaviour
             IntDataBytes _data = new IntDataBytes(-glutenRemoved);
             EventManager.Dispatch("playerGlutenUpdate", _data);
 
-            EventManager.Dispatch("playSound", new PlaySoundData("KeyCapture"));
+            EventManager.Dispatch("playSound", new PlaySoundData("DrinkPepto"));
             Destroy(this.gameObject);
         }
     }

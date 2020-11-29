@@ -7,5 +7,5 @@ using UnityEngine;
 
 public class Settings
 {
-    static public float DifficultyMultiplier = 0.25f + (float)PlayerPrefs.GetInt("Difficulty");
+    static public float DifficultyMultiplier = 0.6f + (float)PlayerPrefs.GetInt("Difficulty");
 }
