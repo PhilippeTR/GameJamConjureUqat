@@ -24,6 +24,7 @@ public class PlayerController : Bytes.Controllers.FPSController
         pickedItem = null;
         EventManager.AddEventListener(EventNames.playerGlutenUpdate, HandleGlutenUpdate);
         glutenBar.SetMinHealth(0f);
+        animController = GetComponentInChildren<GenericAnimationStateMachine>();
     }
 
     protected override void Update()
@@ -56,6 +57,7 @@ public class PlayerController : Bytes.Controllers.FPSController
     protected void Die()
     {
         if (!alive) { return; }
+
 
         alive = false;
     }
@@ -117,6 +119,7 @@ public class PlayerController : Bytes.Controllers.FPSController
         public static PlayerAnim Walking = new PlayerAnim("Swagger Walk", 1f);
         public static PlayerAnim Running = new PlayerAnim("Swagger Walk", 1.5f);
         public static PlayerAnim Idle = new PlayerAnim("Idle", 1f);
+        public static PlayerAnim Die = new PlayerAnim("Idle", 1f);
 
         public PlayerAnim(string pClipName, float pSpeed, int pNbVariations = -1) : base(pClipName, pSpeed, pNbVariations)
         { }
