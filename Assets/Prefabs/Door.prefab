@@ -352,6 +352,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.09
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 630affe3b1e77c24baeca84c45270421, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e2453bcc1517cd4784b0424d65b5522, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 630affe3b1e77c24baeca84c45270421, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e0cb1c88b18845498f8a989ae31d888, type: 2}
     - target: {fileID: 919132149155446097, guid: 630affe3b1e77c24baeca84c45270421, type: 3}
       propertyPath: m_Name
       value: SM_Porte
