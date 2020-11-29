@@ -29,7 +29,7 @@ public class FishingMiniGame : MonoBehaviour
                 catcher.GetComponent<Rigidbody>().velocity = new Vector3(-1, 0, 0);
             if (Input.GetKey("l"))
                 catcher.GetComponent<Rigidbody>().velocity = new Vector3(1, 0, 0);
-            if (toaster && Input.GetKey("1"))
+            if (toaster && Input.GetKey("e"))
             {
                 toasterInPool.SetActive(true);
                 foreach (Rotating r in rs)
@@ -40,7 +40,7 @@ public class FishingMiniGame : MonoBehaviour
         }
         else
         {
-            if (nearToaster && Input.GetKey("1"))
+            if (nearToaster && Input.GetKey("e"))
             {
                 toasterIngame.SetActive(false);
                 toaster = true;
@@ -63,7 +63,7 @@ public class FishingMiniGame : MonoBehaviour
             inGame = true;
             catcher.SetActive(true);
             catcher.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("[i,j,k,l]: Jouer [1]: " + ((toaster) ? "Toaster" : "Trouvez et collectez le avec la touche [1]")));
+            EventManager.Dispatch(EventNames.interactionTextUpdate, new StringDataBytes("I-J-K-L: Jouer: \n" + ((toaster) ? "Ajouter Toaster [E]" : "Trouvez et collectez le avec la touche [E]")));
         }
 
     }
