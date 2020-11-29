@@ -651,10 +651,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.25602904
+  m_Height: 1.6945181
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.024566473, y: -0.15274096, z: 0.043578148}
 --- !u!23 &8674264258698906578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   mouseSensitivy: 1.5
   canBeControlled: 1
   overrideMouse: 1
-  gluten: 100
+  gluten: 0
   alive: 1
   pickedItem: {fileID: 0}
   pickedItemTarget: {fileID: 7593076577651827487}
