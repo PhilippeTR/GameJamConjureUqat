@@ -9,7 +9,7 @@ public class PlayerController : Bytes.Controllers.FPSController
 
     private GenericAnimationStateMachine animController;
 
-    public float gluten = 100f;
+    public float gluten = 0f;
     public bool alive = true;
 
     public Rigidbody pickedItem;
@@ -50,8 +50,9 @@ public class PlayerController : Bytes.Controllers.FPSController
     public void AddGluten(float amount)
     {
         gluten = Mathf.Clamp(gluten + amount, 0, 100);
-        glutenBar.SetHealth(gluten);
         if (gluten >= 100) { Die(); }
+
+        glutenBar.SetHealth(gluten);
     }
 
     protected void Die()

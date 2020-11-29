@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerJump : MonoBehaviour
 {
     public JumpingForce jumper;
+    bool started = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,13 @@ public class TriggerJump : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (started) { return; }
 
         if (other.gameObject.tag == "joueur")
         {
+            started = true;
             Debug.Log("joueur");
-            jumper.StartGravity();
+            Bytes.Animate.Delay(Random.Range(0f, 1.5f), jumper.StartGravity);
         }
     }
 }

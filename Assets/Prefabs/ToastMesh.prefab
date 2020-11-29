@@ -86,7 +86,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 553179045d413e64bb1f88ba0a760c7a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 49f50021d3a875c4698ef09571d92f5b, type: 2}
+      objectReference: {fileID: 2100000, guid: 5cd57fc6f4b71fc4a94ee4cc18a725f3, type: 2}
     - target: {fileID: 919132149155446097, guid: 553179045d413e64bb1f88ba0a760c7a, type: 3}
       propertyPath: m_Name
       value: JusteDePain
